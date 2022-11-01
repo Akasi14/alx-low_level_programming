@@ -1,18 +1,12 @@
-#include "main.h" 
-  
-/** 
- *set_string - sets the string  
- *@s: pointer to pointer 
- *@to: sets pointer to it 
- *Return: pointer to char 
+#include "main.h"
+
+/**
+ *set_string - sets the value of a pointer to a char
+ *@s: source adress.
+ *@to: target adress.
+ *Return: no return.
  */
 void set_string(char **s, char *to)
 {
-	int i;
-
-	for (i = 0; i < (**s + *to); i++)
-	{
-		*to = **s;
-	}
-	return (s);
+	*s = to;
 }
